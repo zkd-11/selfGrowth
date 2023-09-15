@@ -1,0 +1,24 @@
+创建项目时： 出现的一些问题
+
+1. 提示删除 CR （行尾格式 - 看不见的东西 - 一种系统尾部处理 ）
+# EditorConfig is awesome: https://EditorConfig.org
+
+# top-most EditorConfig file
+root = true
+[*]
+indent_style = space
+indent_size = 2
+end_of_line = lf
+charset = utf-8
+trim_trailing_whitespace = false
+insert_final_newline = false
+
+.config配置文件- 统一行结束符号 -默认为lf会自动格式化文件- 
+- 提示删除cR 由于 windows默认行结束为 crlf- 所以引入该文件后， 编辑器会自动格式化一致为lf
+
+
+2. 为什么格式化不生效？
+
+因为有多个格式化的插件/工具- 编辑器无法是被
+所以需要手动右键格式化文档 - 进行选择后就能对文件进行格式化- （第二次踩坑- get到）
+
